@@ -27,10 +27,10 @@ const Dropdown = ({ label, children, isOpen, onHover, onOutsideClick }) => {
       <div className="cursor-pointer hover:text-blue-600">{label}</div>
       {isOpen && (
         <div
-          className="absolute top-full left-0 bg-zinc-50 z-50 shadow-lg mt-2"
+          className="absolute  left-0 bg-zinc-50 z-50 shadow-lg mt-2"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", zIndex: 1000 }}
         >
-          <div className="w-[90vw] bg-zinc-50 rounded-md shadow-lg p-6">
+          <div className=" bg-zinc-50 rounded-md shadow-lg p-6">
             {children}
           </div>
         </div>
