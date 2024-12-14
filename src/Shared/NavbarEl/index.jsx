@@ -5,6 +5,7 @@ import ProjectsDropdown from "../NavPcDropdown/ProjectsDropdown";
 import { Button } from "antd";
 import { MenuOutlined } from "@mui/icons-material";
 import DrawerEl from "../DrawerEl";
+import { Link } from "react-router-dom";
 
 const Dropdown = ({ label, children, isOpen, onHover, onOutsideClick }) => {
   useEffect(() => {
@@ -78,7 +79,7 @@ const NavbarEl = () => {
         isSticky ? "fixed top-0 left-0 w-full z-50 shadow-lg" : "relative"
       } flex justify-between items-center p-6 bg-white transition-all duration-300`}
     >
-      <div className="text-blue-900 text-xl font-bold">Morrison Maierle</div>
+      <Link to="/"><div className="text-blue-900 text-xl font-bold">Morrison Maierle</div></Link>
       <ul className="md:flex space-x-8 text-blue-900 text-sm uppercase hidden tracking-wide">
         {navItems.map(({ label, component }) => (
           <li key={label}>
@@ -96,7 +97,8 @@ const NavbarEl = () => {
           { label: "Insights", href: "#insights" },
           { label: "Careers", href: "#careers" },
           { label: "About", href: "#about" },
-          { label: "Contact Us", href: "#contact" },
+          { label: "Projects", href: "/projects" },
+          { label: "Contact Us", href: "/contact-us" },
         ].map(({ label, href }) => (
           <li key={label} className="hover:text-blue-600 cursor-pointer">
             <a href={href} onClick={closeDropdown}>

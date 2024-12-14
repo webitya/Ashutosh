@@ -15,6 +15,4 @@ const IndustriesDropdown = () => {
         </>
     )
 }
-
-
 export default IndustriesDropdown
