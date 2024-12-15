@@ -1,4 +1,4 @@
-export const projects = [
+export const products = [
     {
       id: 1,
       title: "Fort Knox Mill Modifications Cyanide Mixing System",
@@ -109,7 +109,7 @@ export const projects = [
       location: "Billings, Montana",
       industry: "Water",
       capabilities: "Maintenance",
-      image: "/a.jpg",
+      image: "/b.jpg",
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ export const projects = [
       location: "Seattle, Washington",
       industry: "Infrastructure",
       capabilities: "Construction",
-      image: "/a.jpg",
+      image: "/c.jpg",
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ export const projects = [
       location: "Juneau, Alaska",
       industry: "Water",
       capabilities: "Engineering",
-      image: "/b.jpg",
+      image: "/a.jpg",
     },
     {
       id: 17,
@@ -133,7 +133,7 @@ export const projects = [
       location: "Reno, Nevada",
       industry: "Renewable Energy",
       capabilities: "Engineering",
-      image: "/c.jpg",
+      image: "/b.jpg",
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ export const projects = [
       location: "Boise, Idaho",
       industry: "Infrastructure",
       capabilities: "Maintenance",
-      image: "/a.jpg",
+      image: "/c.jpg",
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ export const projects = [
       location: "Salt Lake City, Utah",
       industry: "Renewable Energy",
       capabilities: "Construction",
-      image: "/b.jpg",
+      image: "/a.jpg",
     },
     {
       id: 20,
@@ -157,7 +157,6 @@ export const projects = [
       location: "Portland, Oregon",
       industry: "Water",
       capabilities: "Construction",
-      image: "/c.jpg",
+      image: "/b.jpg",
     },
-  ];
-  
+];

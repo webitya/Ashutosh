@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Tagline */}
         <div>
-          <h1 className="text-3xl font-bold text-blue-900 mb-3">Morrison Maierle</h1>
+          <h1 className="text-3xl font-bold text-blue-900 mb-3">A S U T O S</h1>
           <p className="text-sm text-gray-600 leading-relaxed">
             engineers • surveyors • planners • scientists
           </p>
