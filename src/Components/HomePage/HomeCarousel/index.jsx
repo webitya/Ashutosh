@@ -18,7 +18,7 @@ const HomeCarousel = () => {
         "Lockwood Water and Sewer District Water Treatment Plant Upgrade Project",
       description:
         "In response to its expanding population, Morrison-Maierle designed a major enhancement for the Lockwood Water and Sewer District's treatment facility.",
-      image: "https://via.placeholder.com/600x300",
+      image: "./slider_img.jpg",
     },
     {
         id: 1,
@@ -27,7 +27,7 @@ const HomeCarousel = () => {
           "Lockwood Water and Sewer District Water Treatment Plant Upgrade Project",
         description:
           "In response to its expanding population, Morrison-Maierle designed a major enhancement for the Lockwood Water and Sewer District's treatment facility.",
-        image: "https://via.placeholder.com/600x300",
+        image: "./slider_img.jpg",
       },
       {
         id: 1,
@@ -36,7 +36,7 @@ const HomeCarousel = () => {
           "Lockwood Water and Sewer District Water Treatment Plant Upgrade Project",
         description:
           "In response to its expanding population, Morrison-Maierle designed a major enhancement for the Lockwood Water and Sewer District's treatment facility.",
-        image: "https://via.placeholder.com/600x300",
+        image: "./slider_img.jpg",
       },
   ];
 

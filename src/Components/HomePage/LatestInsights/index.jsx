@@ -1,3 +1,4 @@
+import { Filter } from "@mui/icons-material";
 import React from "react";
 import "tailwindcss/tailwind.css";
 
@@ -7,26 +8,27 @@ const LatestInsights = () => {
     {
       id: 1,
       title: "SE 2050 and What It Means for Us",
-      imageUrl: "https://via.placeholder.com/600x400", // Replace with actual image
+      imageUrl: "project_1.jpg", // Replace with actual image
       tag: "ARTICLE",
     },
     {
       id: 2,
       title: "3 Strategies for Effective Mass Timber Design",
-      imageUrl: "https://via.placeholder.com/300x200", // Replace with actual image
+      imageUrl: "project_1.jpg", // Replace with actual image
       tag: "ARTICLE",
     },
     {
       id: 3,
       title: "How to Develop a WPS",
-      imageUrl: "https://via.placeholder.com/300x200", // Replace with actual image
+      imageUrl: "project_1.jpg", // Replace with actual image
       tag: "ARTICLE",
     },
+    
   ];
 
   return (
     <div className="bg-gray-100 py-16 px-6">
-      <div className="container mx-auto">
+      <div className="container mx-auto" style={{backgroundImage:`url("./bgc_2.png")`,backgroundPosition:'center',backgroundSize:"cover"}}>
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
           Our Latest Insights

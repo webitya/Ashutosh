@@ -23,7 +23,7 @@ const HomeCommunityLayout = () => {
   ];
 
   return (
-    <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/1500x700')" }}>
+    <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: "url('./dam.jpg')" }}>
       <div className="container mx-auto py-16 px-6">
         {/* Left Section */}
         <div className="text-white font-bold text-4xl md:text-5xl leading-tight max-w-md">
