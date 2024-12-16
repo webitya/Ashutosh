@@ -1,3 +1,4 @@
+import CoreValues from "../../Components/AboutUs/CoreValues"
 import HomeCarousel from "../../Components/HomePage/HomeCarousel"
 import HomeCommunityLayout from "../../Components/HomePage/HomeCommunity"
 import HomeHeroSection from "../../Components/HomePage/HomepageHero"
@@ -11,6 +12,7 @@ const HomePage=()=>{
     <>
     <LayoutEl>
           <HomeHeroSection/>
+          <CoreValues/>
           <HomeCarousel/>
           <LatestInsights/>
           <HomeCommunityLayout/>

@@ -6,6 +6,7 @@ import ContactUs from "./Pages/ContactUs"
 import Projects from "./Pages/Projectss"
 import Products from "./Pages/Products"
 import Insights from "./Pages/Insights"
+import AboutUs from "./Pages/AboutUs"
 
 
 
@@ -20,6 +21,7 @@ const App=()=>{
        <Route path="/projects" element={<Projects/>}/>
        <Route path="/products" element={<Products/>}/>
        <Route path="insights" element={<Insights/>}/>
+       <Route path="/about-us" element={<AboutUs/>}/>
     </Routes>
     </BrowserRouter>
     
