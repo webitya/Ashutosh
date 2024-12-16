@@ -99,7 +99,7 @@ const NavbarEl = () => {
            { label: "Projects", href: "/projects" },
           { label: "Products", href: "/products" },
           { label: "Insights", href: "/insights" },
-          { label: "Careers", href: "#careers" },
+          { label: "Careers", href: "/career" },
           
          
         ].map(({ label, href }) => (

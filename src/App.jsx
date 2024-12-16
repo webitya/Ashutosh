@@ -8,6 +8,8 @@ import Products from "./Pages/Products"
 import Insights from "./Pages/Insights"
 import AboutUs from "./Pages/AboutUs"
 
+import Career from "./Pages/Career"
+
 
 
 const App=()=>{
@@ -22,6 +24,7 @@ const App=()=>{
        <Route path="/products" element={<Products/>}/>
        <Route path="insights" element={<Insights/>}/>
        <Route path="/about-us" element={<AboutUs/>}/>
+       <Route path="/career" element={<Career/>}/>
     </Routes>
     </BrowserRouter>
     
