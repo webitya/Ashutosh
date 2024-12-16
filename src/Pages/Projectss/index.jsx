@@ -1,4 +1,6 @@
 
+import PrjHeroSection from "../../Components/Projectss/PrjHeroSection"
+import PrjSolutionSection from "../../Components/Projectss/PrjSolutionSection"
 import FilterableProjects from "../../Components/Projectss/ProjectFilter"
 import LayoutEl from "../../Shared/LayoutEl"
 const Projects=()=>{
@@ -6,6 +8,8 @@ const Projects=()=>{
         <>
         
         <LayoutEl>
+        <PrjHeroSection/>
+        <PrjSolutionSection/>
             <FilterableProjects/>
         </LayoutEl>
         </>
