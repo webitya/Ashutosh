@@ -95,7 +95,7 @@ const NavbarEl = () => {
           </li>
         ))}
         {[
-          { label: "About", href: "#about" },
+          { label: "About", href: "/about-us" },
            { label: "Projects", href: "/projects" },
           { label: "Products", href: "/products" },
           { label: "Insights", href: "/insights" },
