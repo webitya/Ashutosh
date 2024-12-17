@@ -1,3 +1,4 @@
+import CareerContactForm from "../../Components/Career/CareerForm"
 import CareerHeroSection from "../../Components/Career/CareerHeroSection"
 import CareerSection from "../../Components/Career/CareerSection"
 import CrAboutUsSection from "../../Components/Career/CrAboutUsSection"
@@ -12,6 +13,7 @@ const Career=()=>{
             <CareerHeroSection/>
             <CareerSection/>
             <CrAboutUsSection/>
+            <CareerContactForm/>
          </LayoutEl>
         </>
     )

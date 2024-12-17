@@ -6,7 +6,7 @@ const HistorySection = () => {
       {/* Image Section */}
       <div className="md:w-1/2 relative">
         <img
-          src="image.png" 
+          src="/ab.jpg" 
           alt="John Morrison and Joe Maierle"
           className="w-full h-auto object-cover"
         />

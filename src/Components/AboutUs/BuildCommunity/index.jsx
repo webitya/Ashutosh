@@ -3,18 +3,20 @@ import React from 'react';
 const BuildCommunitySection = () => {
   return (
     <div
-      className="relative bg-cover bg-center text-white"
+      className="relative bg-cover bg-center text-white !min-h[500px]"
       style={{
-        backgroundImage: "url('image.png')", // Replace with actual image path
+        backgroundImage: "url('/bgdam1.jpg')",
+        backgroundPosition:"center",
+        backgroundSize:"cover" // Replace with actual image path
       }}
     >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent !min-h[500px]"></div>
 
       {/* Content Wrapper */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:pt-16 md:pb-16 max-w-6xl mx-auto">
         {/* Left Section */}
-        <div className="md:w-1/3 text-blue-900 font-bold text-4xl md:text-5xl mb-8 md:mb-0">
+        <div className="md:w-1/3 text-white font-bold text-4xl md:text-5xl mb-8 md:mb-0">
           <h1 className="leading-tight">
             Building <br />
             Better <br />

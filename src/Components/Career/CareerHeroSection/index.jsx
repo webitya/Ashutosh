@@ -5,7 +5,8 @@ const CareerHeroSection = () => {
     <section
       className="relative w-full h-[300px] md:h-[200px] lg:h-[250px] bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: `url('https://your-image-link.com')`, // Replace with your image link
+        backgroundImage: `url('/careertop.jpg')`,
+        backgroundSize:"cover" // Replace with your image link
       }}
     >
       {/* Overlay */}

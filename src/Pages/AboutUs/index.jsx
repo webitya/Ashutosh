@@ -19,7 +19,6 @@ const AboutUs=()=>{
           <HistorySection/>
           <BuildCommunitySection/>
           <AwardsSection/>
-          <h1>Aditya</h1>
         </LayoutEl>
 
         </>

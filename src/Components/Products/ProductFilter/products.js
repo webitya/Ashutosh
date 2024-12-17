@@ -6,6 +6,7 @@ export const products = [
       industry: "Mining",
       capabilities: "Engineering",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 2,
@@ -14,6 +15,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Construction",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 3,
@@ -22,6 +24,7 @@ export const products = [
       industry: "Water",
       capabilities: "Maintenance",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ export const products = [
       industry: "Mining",
       capabilities: "Construction",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Engineering",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 6,
@@ -46,6 +51,7 @@ export const products = [
       industry: "Water",
       capabilities: "Engineering",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 7,
@@ -54,6 +60,7 @@ export const products = [
       industry: "Renewable Energy",
       capabilities: "Construction",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 8,
@@ -62,6 +69,7 @@ export const products = [
       industry: "Renewable Energy",
       capabilities: "Maintenance",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 9,
@@ -70,6 +78,7 @@ export const products = [
       industry: "Mining",
       capabilities: "Maintenance",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 10,
@@ -78,6 +87,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Engineering",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 11,
@@ -86,6 +96,7 @@ export const products = [
       industry: "Water",
       capabilities: "Engineering",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 12,
@@ -94,6 +105,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Maintenance",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 13,
@@ -102,6 +114,7 @@ export const products = [
       industry: "Renewable Energy",
       capabilities: "Construction",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 14,
@@ -110,6 +123,7 @@ export const products = [
       industry: "Water",
       capabilities: "Maintenance",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 15,
@@ -118,6 +132,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Construction",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 16,
@@ -126,6 +141,7 @@ export const products = [
       industry: "Water",
       capabilities: "Engineering",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 17,
@@ -134,6 +150,7 @@ export const products = [
       industry: "Renewable Energy",
       capabilities: "Engineering",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 18,
@@ -142,6 +159,7 @@ export const products = [
       industry: "Infrastructure",
       capabilities: "Maintenance",
       image: "/c.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 19,
@@ -150,6 +168,7 @@ export const products = [
       industry: "Renewable Energy",
       capabilities: "Construction",
       image: "/a.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
     {
       id: 20,
@@ -158,5 +177,6 @@ export const products = [
       industry: "Water",
       capabilities: "Construction",
       image: "/b.jpg",
+      demoText: "Cyanide mixing solutions for Fort Knox Mill improvements.",
     },
 ];

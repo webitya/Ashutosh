@@ -6,6 +6,7 @@ const CapabilitiesDropdown = () => {
             <div>
                 <h3 className="text-lg font-bold uppercase mb-4">Infrastructure</h3>
                 <ul className="space-y-2">
+                    <li><Link to="/infrastructure/cities">Smart Cities</Link></li>
                     <li><Link to="/infrastructure/water">Water</Link></li>
                     <li><Link to="/infrastructure/waste-water">Waste Water</Link></li>
                     <li><Link to="/infrastructure/ease-of-living">Ease of Living</Link></li>
@@ -50,6 +51,10 @@ const CapabilitiesDropdown = () => {
                     <li><Link to="/technology/advance-tech-facilities">Advance Tech Facilities</Link></li>
                     <li><Link to="/technology/digital-marketing">Digital Marketing</Link></li>
                 </ul>
+            </div>
+            <div>
+                <h3 className="text-lg font-bold uppercase mb-4">Technology</h3>
+                
             </div>
         </div>
     );

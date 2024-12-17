@@ -28,7 +28,7 @@ const AboutUsSection = () => {
         {/* Interactive Image Section */}
         <div className="relative group">
           <Image
-            src="https://via.placeholder.com/500x300" // Replace with your actual image URL
+            src="/careerab.jpg" // Replace with your actual image URL
             alt="Building Better Careers"
             preview={{
               visible: visible,
