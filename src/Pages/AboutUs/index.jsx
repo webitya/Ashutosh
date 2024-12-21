@@ -17,7 +17,7 @@ const AboutUs=()=>{
           <CoreValues/>
           <StatsSection/>
           <HistorySection/>
-          <BuildCommunitySection/>
+          {/* <BuildCommunitySection/> */}
           <AwardsSection/>
         </LayoutEl>
 

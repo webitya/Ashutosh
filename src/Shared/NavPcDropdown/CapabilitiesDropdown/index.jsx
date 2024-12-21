@@ -48,14 +48,13 @@ const CapabilitiesDropdown = () => {
                     <li><Link to="/technology/industrial-iot">Industrial IoT</Link></li>
                     <li><Link to="/technology/ai-analytics">AI Analytics</Link></li>
                     <li><Link to="/technology/blockchain-platform">Blockchain Platform</Link></li>
-                    <li><Link to="/technology/advance-tech-facilities">Advance Tech Facilities</Link></li>
                     <li><Link to="/technology/digital-marketing">Digital Marketing</Link></li>
                 </ul>
             </div>
-            <div>
+            {/* <div>
                 <h3 className="text-lg font-bold uppercase mb-4">Technology</h3>
                 
-            </div>
+            </div> */}
         </div>
     );
 };

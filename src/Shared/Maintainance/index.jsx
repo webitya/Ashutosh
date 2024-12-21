@@ -2,8 +2,11 @@ import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import { Construction, Refresh } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const MaintenancePage = () => {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -42,21 +45,39 @@ const MaintenancePage = () => {
           Our website is currently under maintenance to serve you better. Please check back soon!
         </Typography>
 
-        {/* Button */}
-        <Button
-          variant="contained"
-          startIcon={<Refresh />}
-          sx={{
-            backgroundColor: '#FFD700',
-            color: '#0f2027',
-            fontWeight: 'bold',
-            '&:hover': {
-              backgroundColor: '#ffcc00',
-            },
-          }}
-        >
-          Refresh Page
-        </Button>
+        {/* Buttons */}
+        <Stack direction="row" spacing={2} justifyContent="center">
+          <Button
+            variant="contained"
+            startIcon={<Refresh />}
+            sx={{
+              backgroundColor: '#FFD700',
+              color: '#0f2027',
+              fontWeight: 'bold',
+              '&:hover': {
+                backgroundColor: '#ffcc00',
+              },
+            }}
+            onClick={() => window.location.reload()}
+          >
+            Refresh Page
+          </Button>
+
+          <Button
+            variant="outlined"
+            sx={{
+              color: '#FFD700',
+              borderColor: '#FFD700',
+              fontWeight: 'bold',
+              '&:hover': {
+                backgroundColor: 'rgba(255, 215, 0, 0.1)',
+              },
+            }}
+            onClick={() => navigate('/')}
+          >
+            Back to Home Page
+          </Button>
+        </Stack>
 
         {/* Footer */}
         <Typography variant="caption">

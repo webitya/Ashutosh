@@ -7,7 +7,6 @@ import Projects from "./Pages/Projectss"
 import Products from "./Pages/Products"
 import Insights from "./Pages/Insights"
 import AboutUs from "./Pages/AboutUs"
-
 import Career from "./Pages/Career"
 import CaBimModelling from "./Pages/Capabilities/DesignEngineering/CaBimModelling"
 import CaFloodModeling from "./Pages/Capabilities/DesignEngineering/CaFloodModeling"
@@ -34,7 +33,10 @@ import InMobility from "./Pages/Industries/InMobility"
 import InSmartIndustry from "./Pages/Industries/InSmartIndustry"
 import InWaterManagement from "./Pages/Industries/InWaterManagement"
 
+// ==============
 
+
+// ============
 
 const App=()=>{
    return (
@@ -51,38 +53,38 @@ const App=()=>{
        <Route path="/career" element={<Career/>}/>
        {/* ==========CAPABILITIES ===========*/}
        {/* DesignEngineering */}
-       <Route path="" element={<CaBimModelling/>}/>
-       <Route path="" element={<CaFloodModeling/>}/>
-       <Route path="" element={<CaSewerModelling/>}/>
-       <Route path="" element={<CaWaterModelling/>}/>
+       <Route path="/design-engineering/bim-modelling" element={<CaBimModelling/>}/>
+       <Route path="/design-engineering/flood-modelling" element={<CaFloodModeling/>}/>
+       <Route path="/design-engineering/sewer-modelling" element={<CaSewerModelling/>}/>
+       <Route path="/design-engineering/water-modelling" element={<CaWaterModelling/>}/>
        {/*Infrastructure*/}
-       <Route path="" element={<CaEaseOfLiving/>}/>
-       <Route path="" element={<CaSmartCities/>}/>
-       <Route path="" element={<CaWasteWater/>}/>
-       <Route path="" element={<CaWater/>}/>
+       <Route path="/infrastructure/ease-of-living" element={<CaEaseOfLiving/>}/>
+       <Route path="/infrastructure/cities" element={<CaSmartCities/>}/>
+       <Route path="/infrastructure/waste-water" element={<CaWasteWater/>}/>
+       <Route path="/infrastructure/water" element={<CaWater/>}/>
        {/* Nature based Solutions */}
-       <Route path="" element={<CaCleanTech/>}/>
-       <Route path="" element={<CaEnvironmental/>}/>
-       <Route path="" element={<CaSolidWaste/>}/>
-       <Route path="" element={<CaWetLand/>}/>
+       <Route path="/nature-based-solutions/cleantech" element={<CaCleanTech/>}/>
+       <Route path="/nature-based-solutions/environmental" element={<CaEnvironmental/>}/>
+       <Route path="/nature-based-solutions/solid-waste" element={<CaSolidWaste/>}/>
+       <Route path="/nature-based-solutions/wetland-rejuvenation" element={<CaWetLand/>}/>
        {/* Technology*/}
-       <Route path="" element={<CaAIAnalytics/>}/>
-       <Route path="" element={<CaBlockChain/>}/>
-       <Route path="" element={<CaDigitalMarketing/>}/>
-       <Route path="" element={<CaIndustrialIOT/>}/>
+       <Route path="/technology/ai-analytics" element={<CaAIAnalytics/>}/>
+       <Route path="/technology/blockchain-platform" element={<CaBlockChain/>}/>
+       <Route path="/technology/digital-marketing" element={<CaDigitalMarketing/>}/>
+       <Route path="/technology/industrial-iot" element={<CaIndustrialIOT/>}/>
        {/* Trenchless */}
-       <Route path="" element={<CaConditionAssessment/>}/>
-       <Route path="" element={<CaMicroTunneling/>}/>
-       <Route path="" element={<CaSewerRehabilitation/>}/>
+       <Route path="/trenchless/condition-assessment" element={<CaConditionAssessment/>}/>
+       <Route path="/trenchless/micro-tunneling" element={<CaMicroTunneling/>}/>
+       <Route path="/trenchless/sewer-rehabilitation" element={<CaSewerRehabilitation/>}/>
        {/* ===================INFRASTRUCTURE================== */}
-       <Route path="" element={<InClimateChange/>}/>
-       <Route path="" element={<InHousing/>}/>
-       <Route path="" element={<InMobility/>}/>
-       <Route path="" element={<InSmartIndustry/>}/>
-       <Route path="" element={<InWaterManagement/>}/>
+       <Route path="/climate-change" element={<InClimateChange/>}/>
+       <Route path="/smart-industry" element={<InHousing/>}/>
+       <Route path="/mobility" element={<InMobility/>}/>
+       <Route path="/smart-infrastructure" element={<InSmartIndustry/>}/>
+       <Route path="/water-management" element={<InWaterManagement/>}/>
     </Routes>
     </BrowserRouter>
-    
+
     </>
    )
 

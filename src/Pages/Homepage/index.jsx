@@ -15,7 +15,7 @@ const HomePage=()=>{
           <CoreValues/>
           <HomeCarousel/>
           <LatestInsights/>
-          <HomeCommunityLayout/>
+         
     </LayoutEl>
     </>
   )

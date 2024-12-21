@@ -1,19 +1,22 @@
 import React from "react";
-import { Drawer, Collapse } from "antd";
+import { Drawer, Collapse, Button } from "antd";
 import { Link } from "react-router-dom";
 
 const { Panel } = Collapse;
+// ====
 
-// Data for Industries and Capabilities
+    
+
+// ====
 const menuData = [
   {
     title: "Industries",
     key: "1",
     items: [
-      { name: "Smart Infrastructure (Housing)", link: "/industries/smart-infrastructure" },
-      { name: "Climate Change", link: "/industries/climate-change" },
-      { name: "Water Management", link: "/industries/water-management" },
-      { name: "Mobility (Transportation)", link: "/industries/mobility" },
+      { name: "Smart Infrastructure (Housing)", link: "/smart-industry" },
+      { name: "Climate Change", link: "/climate-change" },
+      { name: "Water Management", link: "/water-management" },
+      { name: "Mobility (Transportation)", link: "/mobility" },
       { name: "Smart Industry (Industry)", link: "/industries/smart-industry" },
     ],
   },
@@ -24,45 +27,45 @@ const menuData = [
       {
         category: "Infrastructure",
         subItems: [
-          { name: "Water", link: "/capabilities/infrastructure/water" },
-          { name: "Waste Water", link: "/capabilities/infrastructure/waste-water" },
-          { name: "Ease of Living", link: "/capabilities/infrastructure/ease-of-living" },
+          { name: "Smart Cities", link: "/infrastructure/cities" },
+          { name: "Water", link: "/infrastructure/water" },
+          { name: "Waste Water", link: "/infrastructure/waste-water" },
+          { name: "Ease of Living", link: "/infrastructure/ease-of-living" },
         ],
       },
       {
         category: "Design & Engineering",
         subItems: [
-          { name: "Water Modelling", link: "/capabilities/design-engineering/water-modelling" },
-          { name: "Sewer Modelling", link: "/capabilities/design-engineering/sewer-modelling" },
-          { name: "Flood Modelling", link: "/capabilities/design-engineering/flood-modelling" },
-          { name: "BIM Modelling", link: "/capabilities/design-engineering/bim-modelling" },
+          { name: "Water Modelling", link: "/design-engineering/water-modelling" },
+          { name: "Sewer Modelling", link: "/design-engineering/sewer-modelling" },
+          { name: "Flood Modelling", link: "/design-engineering/flood-modelling" },
+          { name: "BIM Modelling", link: "/design-engineering/bim-modelling" },
         ],
       },
       {
         category: "Nature Based Solutions",
         subItems: [
-          { name: "Cleantech", link: "/capabilities/nature/cleantech" },
-          { name: "Environmental", link: "/capabilities/nature/environmental" },
-          { name: "Solid Waste", link: "/capabilities/nature/solid-waste" },
-          { name: "Wetland Rejuvenation", link: "/capabilities/nature/wetland-rejuvenation" },
+          { name: "Cleantech", link: "/nature-based-solutions/cleantech" },
+          { name: "Environmental", link: "/nature-based-solutions/environmental" },
+          { name: "Solid Waste", link: "/nature-based-solutions/solid-waste" },
+          { name: "Wetland Rejuvenation", link: "/nature-based-solutions/wetland-rejuvenation" },
         ],
       },
       {
         category: "Trenchless",
         subItems: [
-          { name: "Sewer Rehabilitation", link: "/capabilities/trenchless/sewer-rehabilitation" },
-          { name: "Micro-Tunneling", link: "/capabilities/trenchless/micro-tunneling" },
-          { name: "Condition Assessment", link: "/capabilities/trenchless/condition-assessment" },
+          { name: "Sewer Rehabilitation", link: "/trenchless/sewer-rehabilitation" },
+          { name: "Micro-Tunneling", link: "/trenchless/micro-tunneling" },
+          { name: "Condition Assessment", link: "/trenchless/condition-assessment" },
         ],
       },
       {
         category: "Technology",
         subItems: [
-          { name: "Industrial IoT", link: "/capabilities/technology/industrial-iot" },
-          { name: "AI Analytics", link: "/capabilities/technology/ai-analytics" },
-          { name: "Blockchain Platform", link: "/capabilities/technology/blockchain" },
-          { name: "Advance Tech Facilities", link: "/capabilities/technology/tech-facilities" },
-          { name: "Digital Marketing", link: "/capabilities/technology/digital-marketing" },
+          { name: "Industrial IoT", link: "/technology/industrial-iot" },
+          { name: "AI Analytics", link: "/technology/ai-analytics" },
+          { name: "Blockchain Platform", link: "/technology/blockchain-platform" },
+          { name: "Digital Marketing", link: "/technology/digital-marketing" },
         ],
       },
     ],
@@ -79,62 +82,68 @@ const DrawerEl = ({ isDrawerVisible, closeDrawer }) => {
       open={isDrawerVisible}
       width={300}
     >
-      <ul className="text-sm uppercase tracking-wide">
-        {/* Map through Menu Data */}
+      <div>
         {menuData.map((menu) => (
-          <li key={menu.key} className="cursor-pointer mb-4">
-            <Collapse ghost>
-              <Panel
-                header={<span className="text-black font-bold">{menu.title}</span>}
-                key={menu.key}
-              >
-                {menu.items.map((item, index) =>
-                  item.subItems ? (
-                    <div key={index} className="mb-4">
-                      <h4 className="text-blue-700 font-bold mb-2">{item.category}</h4>
-                      <ul className="list-none pl-0 text-gray-700">
+          <Collapse key={menu.key} ghost>
+            <Panel
+              key={menu.key}
+              header={
+                <Button type="default" block className="text-left font-semibold">
+                  {menu.title}
+                </Button>
+              }
+            >
+              {menu.items.map((item, index) =>
+                item.subItems ? (
+                  <Collapse key={`sub-${index}`} ghost>
+                    <Panel
+                      key={`category-${index}`}
+                      header={
+                        <Button type="link" block className="text-left text-blue-600 font-bold">
+                          {item.category}
+                        </Button>
+                      }
+                    >
+                      <div className="flex flex-col gap-2">
                         {item.subItems.map((subItem, subIndex) => (
-                          <li key={subIndex} className="mb-2">
-                            <Link
-                              to={subItem.link}
-                              className="hover:text-blue-500 transition"
-                            >
+                          <Link to={subItem.link} key={subIndex}>
+                            <Button type="default" block>
                               {subItem.name}
-                            </Link>
-                          </li>
+                            </Button>
+                          </Link>
                         ))}
-                      </ul>
-                    </div>
-                  ) : (
-                    <ul key={index} className="list-none pl-0 text-gray-700">
-                      <li className="mb-2">
-                        <Link to={item.link} className="hover:text-blue-500 transition">
-                          {item.name}
-                        </Link>
-                      </li>
-                    </ul>
-                  )
-                )}
-              </Panel>
-            </Collapse>
-          </li>
+                      </div>
+                    </Panel>
+                  </Collapse>
+                ) : (
+                  <Link to={item.link} key={index}>
+                    <Button type="default" block className="mb-2">
+                      {item.name}
+                    </Button>
+                  </Link>
+                )
+              )}
+            </Panel>
+          </Collapse>
         ))}
 
         {/* Static Menu Items */}
-        {[
-          { name: "Projects", link: "/projects" },
-          { name: "Insights", link: "/insights" },
-          { name: "Careers", link: "/careers" },
-          { name: "About", link: "/about" },
-          { name: "Contact Us", link: "/contact" },
-        ].map((item, index) => (
-          <li key={index} className="text-black cursor-pointer mb-4">
-            <Link to={item.link} className="hover:text-blue-500 transition">
-              {item.name}
+        <div className="mt-4">
+          {[
+            { name: "Projects", link: "/projects" },
+            { name: "Insights", link: "/insights" },
+            { name: "Careers", link: "/careers" },
+            { name: "About", link: "/about" },
+            { name: "Contact Us", link: "/contact" },
+          ].map((item, index) => (
+            <Link to={item.link} key={index}>
+              <Button  block className="mb-2">
+                {item.name}
+              </Button>
             </Link>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     </Drawer>
   );
 };
