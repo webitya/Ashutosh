@@ -41,7 +41,7 @@ const HomeCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full mx-auto mt-5">
+    <div className="relative w-full mx-auto "style={{borderTop:"2px solid white"}}>
       {/* Carousel */}
       <Carousel ref={carouselRef} autoplay>
         {carouselData.map((slide) => (

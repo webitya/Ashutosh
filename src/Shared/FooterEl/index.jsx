@@ -10,12 +10,12 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-gray-50 text-gray-800 mt-10">
+    <div className="bg-gray-50 text-gray-800 !pt-14">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto py-2 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Tagline */}
         <div>
-          <h1 className="text-3xl font-bold text-blue-900 mb-1">Morrison Maierle</h1>
+          <h1 className="text-3xl font-bold text-blue-900 mb-1"><span className="font-semibold">A S U T O S </span></h1>
           <p className="text-sm text-gray-600 leading-relaxed">
             engineers • surveyors • planners • scientists
           </p>
@@ -29,13 +29,7 @@ const Footer = () => {
               text: "Questions? Inquiries? Let's talk!",
               buttonText: "Contact Us",
               icon: <MailOutlined className="ml-2" />,
-            },
-            {
-              title: "Newsletter",
-              text: "Stay up to date with our insights, projects, and news.",
-              buttonText: "Sign Up",
-              icon: <SendOutlined className="ml-2" />,
-            },
+            }
           ].map((item, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold text-blue-900 mb-2">{item.title}</h3>
@@ -76,21 +70,27 @@ const Footer = () => {
       </div>
 
       {/* Bottom Banner */}
-      <div className="bg-blue-900 text-white py-4 px-6 flex flex-col sm:flex-row items-center justify-between">
+      <div className="bg-blue-900 text-white py-4 px-6 select-none flex flex-col sm:flex-row items-center justify-between">
         <p className="text-sm text-center sm:text-left">
-          Copyright © 2024 Morrison-Maierle | Montana • Oregon • Washington • Wyoming
+          Copyright © 2024 <span className="font-semibold">A S U T O S </span>  | Montana • Oregon • Washington • Wyoming
         </p>
-        <a
-          href="#"
-          className="underline hover:text-gray-200 text-sm mt-2 sm:mt-0"
-          aria-label="Privacy Policy"
-        >
-          PRIVACY POLICY
-        </a>
+        <div className="bg-gray-200 text-gray-700 py-2 px-4 text-center text-sm rounded-sm">
+        <p>
+          Designed by{" "}
+          <a
+            href="https://webitya.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 font-semibold"
+          >
+            Webitya
+          </a>
+        </p>
+      </div>
       </div>
 
       {/* Credits Section */}
-      <div className="bg-gray-200 text-gray-700 py-3 text-center text-sm">
+      {/* <div className="bg-gray-200 text-gray-700 py-3 text-center text-sm">
         <p>
           Website design by{" "}
           <a
@@ -102,7 +102,7 @@ const Footer = () => {
             Webitya
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

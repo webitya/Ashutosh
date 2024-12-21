@@ -64,8 +64,8 @@ const NavbarEl = () => {
   return (
     <nav
       className={`${
-        isSticky ? "fixed top-0 left-0 w-full z-50 shadow-lg" : "relative"
-      } flex justify-between items-center p-6 bg-white transition-all duration-300`}
+        isSticky ? "fixed top-0 select-none left-0 w-full z-50 shadow-lg" : "relative"
+      } flex justify-between select-none items-center p-6 bg-white transition-all duration-300`}
     >
       {/* Logo */}
       <Link to="/">
