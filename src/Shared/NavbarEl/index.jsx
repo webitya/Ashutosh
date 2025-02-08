@@ -3,7 +3,7 @@ import IndustriesDropdown from "../NavPcDropdown/IndustriesDropdown";
 import CapabilitiesDropdown from "../NavPcDropdown/CapabilitiesDropdown";
 import ProjectsDropdown from "../NavPcDropdown/ProjectsDropdown";
 import { Button } from "antd";
-import { MenuOutlined, PhoneOutlined, SearchOutlined } from "@mui/icons-material";
+import { MenuOutlined, PhoneOutlined, SearchOutlined, WidthFull } from "@mui/icons-material";
 import DrawerEl from "../DrawerEl";
 import { Link } from "react-router-dom";
 
@@ -80,7 +80,7 @@ const NavbarEl = () => {
               label={label}
               isOpen={activeDropdown === label}
               onHover={() => openDropdown(label)}
-              onOutsideClick={closeDropdown}
+              onOutsideClick={closeDropdown} 
             >
               {component}
             </Dropdown>
@@ -104,9 +104,11 @@ const NavbarEl = () => {
 
       {/* Search and Menu Icons */}
       <div className="hidden md:flex">
-        <Button>
-          <PhoneOutlined/>9693245941
+      <Link to="https://wa.link/e9zkud">
+      <Button>
+          <PhoneOutlined/>+91 7602196232
         </Button>
+      </Link>
       </div>
       <div className="flex md:hidden">
         <Button icon={<MenuOutlined />} type="text" onClick={showDrawer} />

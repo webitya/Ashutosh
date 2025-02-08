@@ -1,5 +1,6 @@
 import DyAboutSection from "../../../DynamicPages/DyAboutSection";
 import DyHeroSection from "../../../DynamicPages/DyHeroSection";
+import DyRelatedProducts from "../../../DynamicPages/DynamicRelatedProjects";
 import DyServices from "../../../DynamicPages/DyServices";
 import LayoutEl from "../../../Shared/LayoutEl"
 
@@ -39,6 +40,54 @@ const InHousing=()=>{
           'Water reclamation and reuse',
         ],
       };
+      // ============Related Projects
+      const relatedProjects = {
+        heading: 'RELATED PROJECTS',
+        cards: [
+          {
+            title: 'Glasgow Water Treatment Plant',
+            image: '/1.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Blue overlay
+            link: '/glasgow-water-treatment-plant',
+          },
+          {
+            title: 'Jake Jabs College of Business',
+            image: '/2.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Green overlay
+            link: '/jake-jabs-college-of-business',
+          },
+          {
+            title: 'Seeley Building',
+            image: '/3.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Red overlay
+            link: '/seeley-building',
+          },
+          {
+            title: 'Glasgow Water Treatment Plant',
+            image: '/4.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Blue overlay
+            link: '/glasgow-water-treatment-plant',
+          },
+          {
+            title: 'Jake Jabs College of Business',
+            image: '/5.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Green overlay
+            link: '/jake-jabs-college-of-business',
+          },
+          {
+            title: 'Seeley Building',
+            image: '/6.jpg', // Replace with actual image URL
+            overlayText: 'View Project',
+            overlayColor: 'rgba(0, 0, 0, 0.7)', // Red overlay
+            link: '/seeley-building',
+          },
+        ],
+      };
     return (
         <>
         <LayoutEl>
@@ -49,6 +98,7 @@ const InHousing=()=>{
       />
       <DyAboutSection heading={sectionData.heading} paragraphs={sectionData.paragraphs} />
       <DyServices heading={servicesData.heading} services={servicesData.services} />
+      <DyRelatedProducts heading={relatedProjects.heading} cards={relatedProjects.cards} />;
         </LayoutEl>
         </>
     )
